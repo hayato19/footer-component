@@ -1,0 +1,86 @@
+:root{
+    --b-color: dimgrey;
+}
+main{
+    height: 2100px;
+    background-color: var(--b-color);
+}
+footer{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+a,a:visited{
+    color: #111111;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.footer-top{
+    display: flex;
+    justify-content: center;
+}
+.footer-link{
+    height: 90px;
+    width: 140px;
+    text-decoration: none;
+    border-right: solid var(--b-color) 1px;
+    margin-top: 10px;
+}
+.footer-link:last-child{
+    border: none;
+}
+.footer-title{
+    padding-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+.footer-detail{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+}
+hr{
+    color: var(--b-color);
+    height: 2px;
+}
+.footer-middle-link{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 10svw;
+}
+.footer-item{
+    font-size: 14px;
+    width: max(20svw, 10em);
+    text-align: center;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+}
+.footer-bottom-item{
+    padding: 0 10px;
+}
+.sns-logo{
+    height: 30px;
+    width: 30px;
+}
+@media screen and (max-width: 1024px) {
+    .footer-top{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-link{
+        border-right: none;
+        border-bottom: solid var(--b-color) 1px;
+        width: 100svw;
+    }
+    .footer-title{
+        text-align: center;
+    }
+    .footer-detail{
+        text-align: center;
+    }
+}
